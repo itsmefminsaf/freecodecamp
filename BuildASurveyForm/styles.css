@@ -47,15 +47,21 @@ body {
 }
 
 .form form {
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     "name name name"
     "email email email"
     "age indu indu"
-    "ratio ratio check"
-    "msg msg msg" "submit submit submit";
+    "ratio ratio ratio"
+    "check check check"
+    "msg msg msg"
+    "submit submit submit";
   gap: 10px;
+  align-content: center;
+  justify-content: center;
 }
 
 .form form .name {
@@ -70,16 +76,85 @@ body {
   grid-area: age;
 }
 
+.form form .age input {
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: none;
+  outline: none;
+}
+
 .form form .indu {
   grid-area: indu;
 }
 
+.form form .indu select {
+  width: 50%;
+  border: none;
+  background-color: #fff9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form form .ratio {
+  grid-area: ratio;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form form .ratio div {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+}
+
+.form form .ratio div input {
+  background-color: #f7854d;
+}
+
+.form form .check {
+  grid-area: check;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.q {
+  width: 30%;
+}
+
+.form form .check div {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+}
 .form form .text {
-  grid-area: text;
+  grid-area: msg;
+}
+
+.form form .text textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 60px;
+  padding: 5px;
 }
 
 .form form .submit {
   grid-area: submit;
+}
+
+.form form .submit button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f7854d;
+  height: 40px;
+  align-self: center;
+  font-size: 1.5em;
+  border-radius: 20px;
 }
 
 .form form .input:not(.age) input {
