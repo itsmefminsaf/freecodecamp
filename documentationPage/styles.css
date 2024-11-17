@@ -74,11 +74,8 @@ li {
   list-style: none;
 }
 
-@media screen and (min-width: 480px) {
-  header {
-    font-size: 1.5rem;
-  }
-  p {
+@media (max-width: 764px) {
+  nav a {
     font-size: 1rem;
   }
 }
