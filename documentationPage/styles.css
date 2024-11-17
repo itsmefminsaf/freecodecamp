@@ -9,4 +9,67 @@ body {
   width: 100%;
   background-color: #333;
   color: white;
+  display: flex;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #afafaf;
+}
+
+nav header {
+  font-size: 1.8rem;
+  background-color: black;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #333;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #4444;
+}
+
+section {
+  position: relative;
+  left: 20vw;
+  width: 80vw;
+  padding: 10px;
+}
+
+section header {
+  font-size: 2rem;
+}
+
+p {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+code {
+  padding: 10px 15px 10px 15px;
+  background-color: #222;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+li {
+  margin: 20px 10px;
+  list-style: none;
 }

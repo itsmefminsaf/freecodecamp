@@ -3,40 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GIT documentation</title>
+    <title>GIT Documentation</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav id="navbar">
+      <header>GIT Documentation</header>
+      <a href="#Intro" id="nav_link">Intro</a>
+      <a href="#Basic_commends" id="nav_link">Basic commends</a>
+      <a href="#Branching" id="nav_link">Branching</a>
+      <a href="#Contribution" id="nav_link">Contribution</a>
+      <a href="#What_is_Github" id="nav_link">What is Github</a>
+      <a href="#How_to_use_Github" id="nav_link">How to use Github</a>
+    </nav>
     <main id="main-doc">
       <section class="main-section" id="Intro">
         <header>Intro</header>
-        <p></p>
-        <p></p>
+        <p>
+          GIT is a version control system that allow developers manage their
+          code space more efficiently
+        </p>
+        <p>
+          These days GIT is almost used by every tech companies. So, it' worth
+          learning.
+        </p>
+        <p>To Get started, first, make sure you have git installed.</p>
+        <p>
+          If you are on linux, don't worry git is already on your machine. But,
+          if you are on the fu*king windows you have to installed it manually by
+          clicking <a href="https://git-scm.com/">here.</a>
+        </p>
+        <p>Once you ready with GIT type this commend in your terminal.</p>
+        <br />
+        <li>
+          <code>git -v</code>
+        </li>
       </section>
       <section class="main-section" id="Basic_commends">
         <header>Basic commends</header>
-        <p></p>
-        <p></p>
+        <p>In GIT, some commands are used offend by developers. Such as:</p>
+        <li><code> git add . </code></li>
+        <li><code> git commit -m "commit message" </code></li>
+        <li><code>git push</code></li>
+        <p>Lemme explain these terms.</p>
+        <p>git add will stage the changes.</p>
+        <p>git commit will commit the staged changes.</p>
+        <p>And finally, git push will upload the code to remote directory.</p>
       </section>
       <section class="main-section" id="Branching">
         <header>Branching</header>
-        <p></p>
-        <p></p>
+        <p>
+          Branching is a very interesting topic. Branches are like multi
+          dimension that allow developers work on the same project but without
+          affecting the each others code. Confusing !?. Lets take a look at an
+          example of a branch.
+        </p>
+        <p>
+          You are working on full stack web project. You are a frontend
+          developer and your friend Elon Musk is back developer. If you both
+          work without branches you may encounter some problem during the
+          development. Thats hare git branches come to handy.
+        </p>
+        <p>Just run.</p>
+        <code>git branch front-end</code>
+        <code>git checkout front-end</code>
+        <p>
+          Tadaaa, now you have a copy of the project that only for you. All you
+          have to make the changes in your front-end branch and after everything
+          finished just merge your frond-end code with the main branch where the
+          final codes will be.
+        </p>
       </section>
       <section class="main-section" id="Contribution">
         <header>Contribution</header>
-        <p></p>
-        <p></p>
+        <p>GIT also help in open source projects linux linux.</p>
+        <p>
+          You can clone others repository and make some changes add it; commit
+          it; and push it;
+        </p>
+        <p>Here is the code for cloning onto others projects</p>
+        <code>git clone https://github.com/itsmefminsaf/freecodecamp</code>
+        <p>
+          Now, you can edit this website and rise a pull request. After I accept
+          it the changed you kde live on this website.
+        </p>
       </section>
       <section class="main-section" id="What_is_Github">
         <header>What is Github</header>
-        <p></p>
-        <p></p>
+        <p>
+          You can notice in the git clone these is something github. Github is a
+          remote git repository service provider. We can save our works in cloud
+          so we won't lose our codes.
+        </p>
+        <p>
+          If you "is that Github being only chose for git remote repository. No,
+          actually not. These is a lot of alternatives for Github. Such as:"
+        </p>
+        <li>Bit bucket</li>
+        <li>Gitlab</li>
+        <li>and so...</li>
+        <p>But, GIthub is the popular one.</p>
       </section>
       <section class="main-section" id="How_to_use_Github">
         <header>How to use Github</header>
-        <p></p>
-        <p></p>
+        <p>
+          To use Github you have to create an account. Go and
+          <a href="https://githu.com">create</a> one first.
+        </p>
+        <p>
+          After that, create a new repository and copy the url and set the
+          repository as the remote origin of your local project by running this
+          command in your terminal.
+        </p>
+        <code>git remote origin -u main</code>
+        <p>Now if you push your code it directly goes to Github repository.</p>
       </section>
     </main>
   </body>
