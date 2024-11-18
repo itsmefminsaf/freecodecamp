@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, aliceblue, rgb(247, 231, 202));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#text-input {
+  width: 500px;
+  height: 50px;
+  padding: 40px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#check-btn {
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background: black;
+  color: white;
+  border-radius: 1000px;
+}
+
+#result {
+  font-size: 1.3rem;
+}
