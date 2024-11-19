@@ -1,0 +1,43 @@
+* {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #d0fff5, #b4f7e8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#number {
+  padding: 30px;
+  border-radius: 1000px;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+#convert-btn {
+  padding: 20px;
+  border-radius: 1000px;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background: #000;
+  color: white;
+}
+
+#output {
+  font-size: 1.3rem;
+}
